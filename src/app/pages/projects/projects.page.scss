@@ -1,0 +1,49 @@
+ion-toolbar {
+    --background-color: transparent;
+    --ion-color-base: transparent !important;
+}
+
+.bg {
+width: 100%;
+height: 100%;
+position: absolute;
+display: flex;
+background: rgba(183,222,237,1);
+background: -moz-linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(155,216,238,1) 15%, rgba(113,206,239,1) 38%, rgba(33,180,226,1) 59%, rgba(32,124,229,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(183,222,237,1)), color-stop(15%, rgba(155,216,238,1)), color-stop(38%, rgba(113,206,239,1)), color-stop(59%, rgba(33,180,226,1)), color-stop(100%, rgba(32,124,229,1)));
+background: -webkit-linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(155,216,238,1) 15%, rgba(113,206,239,1) 38%, rgba(33,180,226,1) 59%, rgba(32,124,229,1) 100%);
+background: -o-linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(155,216,238,1) 15%, rgba(113,206,239,1) 38%, rgba(33,180,226,1) 59%, rgba(32,124,229,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(155,216,238,1) 15%, rgba(113,206,239,1) 38%, rgba(33,180,226,1) 59%, rgba(32,124,229,1) 100%);
+background: linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(155,216,238,1) 15%, rgba(113,206,239,1) 38%, rgba(33,180,226,1) 59%, rgba(32,124,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#207ce5', GradientType=1 );
+background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.thick {
+    font-weight: 700;
+}
+
+.lap-img {
+    width: 100%;
+    display: block;
+    z-index: 100;
+    margin-top: 5%;
+    position: relative;
+}
+
+.small-grey {
+    color: gray;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+}
