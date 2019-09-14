@@ -8,7 +8,11 @@ const routes: Routes = [
   },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
   { path: 'messages', loadChildren: './pages/messages/messages.module#MessagesPageModule' },
-  { path: 'profile-edit', loadChildren: './pages/profile-edit/profile-edit.module#ProfileEditPageModule' }
+  { path: 'profile-edit', loadChildren: './pages/profile-edit/profile-edit.module#ProfileEditPageModule' },
+
+  { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
+
+  { path: 'post', loadChildren: './pages/post/post.module#PostPageModule' }
 ];
 @NgModule({
   imports: [

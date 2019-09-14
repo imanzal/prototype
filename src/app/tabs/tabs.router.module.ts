@@ -1,8 +1,11 @@
+import { ProfilePageModule } from './../pages/profile/profile.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
+
+
   {
     path: 'tabs',
     component: TabsPage,
@@ -28,12 +31,22 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'tab5',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
+          }
+        ]
+      },
+      {
         path: 'tab3',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+              import('../pages/post/post.module').then(m => m.PostPageModule)
           }
         ]
       },
